@@ -11,7 +11,11 @@ A static HTML/CSS prototype of the restructured drage.com. It has no build step 
 | `international-individuals-families.html` | Sample audience page (template for the other 4 "Who We Help" pages) |
 | `contact.html` | Contact form + office cards (Coral Gables, India, Mexico) |
 | `assets/css/styles.css` | Shared base styles |
-| `assets/img/` | Drage logo (positive for light backgrounds, white-text version for dark) |
+| `assets/img/` | Drage logo source files (positive for light backgrounds, white-text version for dark). The pages embed the logos directly, so they display even if this folder is missing. |
+
+The top ribbon (utility bar and main menu) stays fixed at the top while you scroll (`.site-top` in `styles.css`).
+
+**GitHub Pages:** upload the *contents* of this folder to the repository root, so `index.html` sits at the top level. Then turn on Settings › Pages › Deploy from branch › `main` / root.
 
 ## Preview locally
 

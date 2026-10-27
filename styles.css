@@ -16,6 +16,17 @@ body {
 
 img { max-width: 100%; height: auto; }
 
+/* Top ribbon (utility bar + main menu) stays fixed while scrolling */
+.site-top {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 1px 0 #E4E2DC, 0 4px 12px rgba(8, 24, 63, 0.06);
+}
+
+/* Keep in-page anchors (#who, #services, #insights) from hiding under the ribbon */
+[id] { scroll-margin-top: 140px; }
+
 a { color: #0B2154; }
 a:hover { color: #1E3A8A; }
 
