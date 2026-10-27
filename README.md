@@ -13,7 +13,7 @@ A static HTML/CSS prototype of the restructured drage.com. It has no build step 
 | `assets/css/styles.css` | Shared base styles |
 | `assets/img/` | Drage logo source files (positive for light backgrounds, white-text version for dark). The pages embed the logos directly, so they display even if this folder is missing. |
 
-The top ribbon (utility bar and main menu) stays fixed at the top while you scroll (`.site-top` in `styles.css`).
+Each HTML page is self-contained. Styles, the logos and the pinned top ribbon (`.site-top`) are all built into the page, so every page works even if the `assets` folder is missing. `assets/css/styles.css` is kept as the editable source of those styles.
 
 **GitHub Pages:** upload the *contents* of this folder to the repository root, so `index.html` sits at the top level. Then turn on Settings › Pages › Deploy from branch › `main` / root.
 
